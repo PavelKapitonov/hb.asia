@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+    
+    # Разрешить прямой доступ к статическим файлам
+    RewriteCond %{REQUEST_URI} \.(css|js|png|jpg|svg|woff2)$ [NC]
+    RewriteRule ^ - [L]
+    
+    # Перенаправлять все остальное на index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>

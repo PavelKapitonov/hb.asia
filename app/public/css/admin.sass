@@ -1,0 +1,159 @@
+@import reset
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap)
+$base-color-red: #6b0000
+$base-color-red-hover: #870000
+$base-color-blue: #01053f
+$base-color-blue-light: #7f8eab
+$base-color-blue-light-hover: #647dad
+$base-color-white: #ffffff
+body
+    font-family: 'Roboto', sans-serif    
+h1
+    font-weight: 500
+    font-size: 36px
+    line-height: 54px  
+    text-transform: uppercase
+    color: $base-color-red  
+    margin: 0px 0 30px 0
+h2
+    font-weight: 500
+    font-size: 36px
+    line-height: 54px  
+    text-transform: uppercase
+    color: $base-color-red  
+    margin: 0px 0 30px 0    
+h4
+    font-weight: 500
+    font-size: 24px
+    line-height: 36px  
+    color: $base-color-blue  
+    margin: 15px 0  
+h3
+    font-weight: 500
+    font-size: 20px
+    line-height: 30px  
+    color: $base-color-blue  
+    margin: 15px 0     
+p
+    font-weight: 300
+    font-size: 16px
+    line-height: 24px
+    & strong, b
+        font-weight: 500
+    & em
+        font-style: italic
+    & a
+        color: $base-color-red
+        &:hover
+            color: $base-color-red-hover
+    & mark
+        color: $base-color-red
+        font-weight: 500
+        background: none
+.row
+    margin: 0 30px
+.content
+    width: 100% 
+    max-width: 990px
+div.admin
+    display: grid
+    grid-template-columns: 320px 1fr
+    aside
+        background: #757575
+        height: 100vh
+        a
+            display: block
+            border: 1px solid $base-color-white
+            text-align: center
+            padding: 10px
+            margin: 10px auto
+            text-decoration: none
+            color: $base-color-white
+input
+    display: block
+    width: 100%
+    height: 42px
+    border: 1px solid $base-color-red
+    border-radius: 3px
+    padding: 0 15px
+    box-sizing: border-box
+textarea
+    display: block
+    width: 100%
+    border: 1px solid $base-color-red
+    border-radius: 3px
+    padding: 15px
+    box-sizing: border-box        
+select
+    display: block
+    width: 100%
+    height: 42px
+    border: 1px solid $base-color-red
+    border-radius: 3px
+    padding: 0 15px
+    margin-bottom: 15px
+    box-sizing: border-box     
+iframe
+    display: block
+    width: 100%
+    height: 320px       
+button.btn
+    margin-bottom: 15px
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 150px
+    height: 42px
+    border: none
+    border-radius: 3px
+    color: $base-color-white
+    background: $base-color-red
+    box-sizing: border-box
+    text-transform: uppercase
+    font-size: 15px
+    text-decoration: none
+    cursor: pointer
+    transition: all 0.2s ease-in-out
+    &:hover
+        background: $base-color-red-hover
+.form-group
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-bottom: 15px
+    label
+        width: 150px
+        text-align: right
+        padding-right: 15px
+        box-sizing: border-box
+.post
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px
+    p
+        padding: 10px
+    &:nth-child(odd)
+        background: #eee 
+    img
+        max-width: 100px
+.posts
+    display: table
+    width: 100%
+    div.post
+        display: table-row
+        div
+            display: table-cell
+            vertical-align: middle
+        div.btn-group    
+            div
+                display: flex
+                gap: 30px  
+                aline-items: center
+.tbl_text
+    max-width: 350px
+.btn-group    
+    display: flex
+    gap: 30px  
+    align-items: center

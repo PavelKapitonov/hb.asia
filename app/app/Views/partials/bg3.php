@@ -1,0 +1,1 @@
+<img src="/img/anapurna-1.jpg" alt="bg-healing" class="w100 mv_none" >

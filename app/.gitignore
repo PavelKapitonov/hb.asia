@@ -1,0 +1,8 @@
+SECURITY.md
+phpstan-baseline.neon.dist
+LICENSE
+healingbowl-nepal.code-workspace
+CONTRIBUTING.md
+.env
+/tests
+/writable
